@@ -1,0 +1,15 @@
+{
+  "name": "kurea-contrib-rss",
+  "description": "RSS feed subscriber",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "index.coffee",
+  "author": "Kyle Kemp",
+  "dependencies": {
+    "feedsub": "^0.2.8",
+    "irc-colors": "^1.1.0",
+    "lodash": "^3.3.0",
+    "shorturl": "0.0.3",
+    "underscore.string": "^2.4.0"
+  }
+}
