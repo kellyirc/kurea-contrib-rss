@@ -3,7 +3,6 @@ module.exports = (Module) ->
   FeedSub = require "feedsub"
   shorturl = require "shorturl"
   _ = require "lodash"
-  _.str = require "underscore.string"
   color = require "irc-colors"
 
   class RSSModule extends Module
@@ -29,7 +28,7 @@ module.exports = (Module) ->
         moduleManager.botManager.botHash[server].say channel, msg
 
       rss = (server, channel, url, title, interval=10, silent=no) =>
-        if not _.str.include url, "http"
+        if not _.includes url, "http"
           say server, channel, "You need to specify a valid URL." unless silent
           return
 
