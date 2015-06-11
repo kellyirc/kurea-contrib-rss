@@ -42,7 +42,7 @@ module.exports = (Module) ->
           autoStart: yes
           emitOnStart: yes
           lastDate: new Date()
-          history: 10
+          maxHistory: 10
 
         newFeed._isFirst = yes
 
